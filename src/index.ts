@@ -13,7 +13,7 @@ console.log(
 );
 
 program
-  .version("0.0.1")
+  .version("0.1.0")
   .description("A simple pizza CLI to learn how to build CLI using node.js")
   .option("-p, --pepper", "Add pepper")
   .option("-P, --pineapple", "Add pineapple")
