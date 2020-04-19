@@ -11,7 +11,7 @@
     "create": "npm run build && npm run test",
     "build": "tsc -p .",
     "test": "sudo npm i -g && pizza",
-    "refresh": "rm -rf ./node_modules ./package-lock.json && npm install"
+    "refresh": "rm -rf ./node_modules ./package-lock.json ./lib && npm install"
   },
   "repository": {
     "type": "git",
