@@ -24,16 +24,16 @@ program
   .option("-H, --ham", "Add slices of ham")
   .parse(process.argv);
 
-console.log("you ordered a pizza with:");
-if (program.pepper) console.log("  - peppers");
-if (program.pineapple) console.log("  - pineapple");
-if (program.pepperoni) console.log("  - pepperoni");
-if (program.mushrooms) console.log("  - mushrooms");
-if (program.ham) console.log("  - slices of ham");
-const cheese: string =
-  true === program.cheese ? "marble" : program.cheese || "no";
-console.log("  - %s cheese", cheese);
-
 if (!process.argv.slice(2).length) {
   program.outputHelp();
+} else {
+  console.log("you ordered a pizza with:");
+  if (program.pepper) console.log("  - peppers");
+  if (program.pineapple) console.log("  - pineapple");
+  if (program.pepperoni) console.log("  - pepperoni");
+  if (program.mushrooms) console.log("  - mushrooms");
+  if (program.ham) console.log("  - slices of ham");
+  const cheese: string =
+    true === program.cheese ? "marble" : program.cheese || "no";
+  console.log("  - %s cheese", cheese);
 }

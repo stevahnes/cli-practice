@@ -1,6 +1,6 @@
 {
   "name": "typescript-cli-practice",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "A simple pizza CLI to learn how to build CLI using node.js",
   "main": "./lib/index.js",
   "bin": {
@@ -8,9 +8,8 @@
   },
   "scripts": {
     "start": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts",
-    "create": "npm run build && npm run test",
     "build": "tsc -p .",
-    "test": "sudo npm i -g && pizza",
+    "test": "npm run build && pizza",
     "refresh": "rm -rf ./node_modules ./package-lock.json ./lib && npm install"
   },
   "repository": {
